@@ -29,15 +29,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-
+    map creates a new array and foreach mutates the array
 2. What is the difference between a function and a method?
 
 3. What is closure?
-
+    nested function have access to their parent functions but not the other way around. functions have access to functions on the global scope, but not the other way around
 4. Describe the four rules of the 'this' keyword.
-
+    Window Binding
+    When it is used in a global scope it will point at the window element.
+    Implicit binding
+    when used in a method of an object, it points at the objects its used on.
+    new binding
+    when used with a constructor it points at the object that is created
+    Explicit Binding
+    when use with bind it points at the argument of the function
 5. Why do we need super() in an extended class?
-
+    to get the property of the parent class.
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
