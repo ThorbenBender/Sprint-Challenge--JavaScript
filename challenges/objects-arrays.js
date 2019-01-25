@@ -72,6 +72,7 @@ for (let i = 0; i < graduates.length; i++){
     universities.push(graduates[i].university);
   }
 }
+universities.sort();
 console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
@@ -134,21 +135,19 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
-zooAnimals.map(animal => {
-  lowerCase.push(animal.animal_name.toLowerCase());
+const lowerCase = zooAnimals.map(animal => {
+  return (animal.animal_name.toLowerCase());
 })
-console.log(lowerCase); 
+console.log(lowerCase, 'lowercase <==='); 
 
 /* Request 3: .filter() 
 
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const lowerPopulation = [];
-zooAnimals.filter(animal => {
+const lowerPopulation = zooAnimals.filter(animal => {
   if (animal.population < 5){
-    lowerPopulation.push(animal);
+    return (animal);
   }
 })
 console.log(lowerPopulation);
